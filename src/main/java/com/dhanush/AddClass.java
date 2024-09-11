@@ -9,7 +9,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-
 public class AddClass  extends HttpServlet {
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
         PrintWriter pp=res.getWriter();
@@ -19,6 +18,9 @@ public class AddClass  extends HttpServlet {
         req.setAttribute("mul",num3);
         RequestDispatcher rd =req.getRequestDispatcher("/multiply");
         rd.forward(req, res);
+        System.out.println("in add");
+
+
 
 
 

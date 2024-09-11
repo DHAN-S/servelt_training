@@ -14,6 +14,6 @@ public class MultiplyClass extends HttpServlet {
         PrintWriter ss=res.getWriter();
         int values=(int)(req.getAttribute("mul"));
         System.out.println(values);
-        ss.println("in  multilpy  "+values);
+    ss.println("in  multilpy  "+values);
     }
 }
