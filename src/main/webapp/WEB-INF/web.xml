@@ -11,4 +11,12 @@
     <servlet-name>abcd</servlet-name>
     <url-pattern>/add</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>abc</servlet-name>
+    <servlet-class>com.dhanush.MultiplyClass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>abc</servlet-name>
+    <url-pattern>/multiply</url-pattern>
+  </servlet-mapping>
 </web-app>
