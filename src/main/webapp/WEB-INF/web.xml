@@ -8,7 +8,7 @@
     <servlet-class>com.dhanush.AddClass</servlet-class>
 
 
-    //servlet config for a single servelt
+<!--    servlet config for a single servelt-->
     <init-param>
       <param-name>name</param-name>
       <param-value>dhaswin</param-value>
@@ -28,7 +28,7 @@
   </servlet-mapping>
 
 
-  //servlet context -- all servelt can share this
+<!--  //servlet context &#45;&#45; all servelt can share this-->
   <context-param>
     <param-name>name</param-name>
     <param-value>dhanush_dhaswin</param-value>
