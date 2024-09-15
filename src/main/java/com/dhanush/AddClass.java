@@ -1,8 +1,5 @@
 package com.dhanush;
-import jakarta.servlet.RequestDispatcher;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
+import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 
 import java.io.IOException;
@@ -19,6 +16,19 @@ public class AddClass  extends HttpServlet {
         // cookie is string value only snd
     res.addCookie(cook);
         res.sendRedirect("multiply");
+
+
+        //servlet-context
+//        ServletContext cont = getServletContext();
+//       String namevalue= cont.getInitParameter("name");
+//        System.out.println(namevalue);
+
+
+//servlet-config (supose both servelt config and context written in web.xml means it take the config only.
+
+      ServletConfig scg=  getServletConfig();
+      String name= scg.getInitParameter("name");
+        System.out.println(name);
 
 
 

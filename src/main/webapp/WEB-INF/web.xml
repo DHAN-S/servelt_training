@@ -6,6 +6,13 @@
   <servlet>
     <servlet-name>abcd</servlet-name>
     <servlet-class>com.dhanush.AddClass</servlet-class>
+
+
+    //servlet config for a single servelt
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>dhaswin</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>abcd</servlet-name>
@@ -19,4 +26,11 @@
     <servlet-name>abc</servlet-name>
     <url-pattern>/multiply</url-pattern>
   </servlet-mapping>
+
+
+  //servlet context -- all servelt can share this
+  <context-param>
+    <param-name>name</param-name>
+    <param-value>dhanush_dhaswin</param-value>
+  </context-param>
 </web-app>
